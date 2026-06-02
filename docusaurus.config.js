@@ -155,4 +155,14 @@ const config = {
     }),
 };
 
+config.plugins = [
+  [
+    require.resolve('@easyops-cn/docusaurus-search-local'),
+    {
+      hashed: true,
+      language: ['en'],
+    },
+  ],
+];
+
 export default config;
